@@ -5,13 +5,15 @@ function nextSqaure(n){
   var sqaure = 1;
   while( sqaure <= n ){
   	sqaure = num * num;
-  	num++; 
   	if( sqaure == n ){
-  		return (n+1)*(n+1);
+  		return (num+1)*(num+1);
   	} else if(sqaure > n ){
   		return "no";
   	}
+  	num++; 
   }
 }
 // 아래는 테스트로 출력해 보기 위한 코드입니다.
 console.log("결과 : " + nextSqaure(576));
+
+
